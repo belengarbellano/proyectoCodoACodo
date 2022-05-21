@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*Estilos del header */
+
+.nav__responsive-ul {
+    display: none;
+}
+
+.nav {
+    background-color: #d4b7ad;
+    width: 100%;
+    display: block;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 12px;
+    color: #AC7E6C;
+}
+
+.nav__li:hover>a {
+    color: #000;
+}
+
+.nav__li:hover {
+    color: #000;
+}
+
+.nav__li a {
+    color: #AC7E6C;
+    text-decoration: none;
+    font-family: 'Atma', cursive;
+}
+
+.nav__li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.nav__responsive-button-container {
+    position: absolute;
+    width: 100%;
+    font-size: 25px;
+    background-color: #d4b7ad;
+    margin-top: -64px;
+    z-index: 100;
+}
+
+.nav__responsive-button {
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+}
+
+
+/*Fin estilos del header */
+
+
+/*Estilos del section*/
+
+h1 {
+    text-align: center;
+    font-family: 'Atma', cursive;
+    font-style: italic;
+    font-size: 34px;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    color: #AC7E6C;
+    animation: bounce;
+    animation-duration: 2s;
+    padding-top: 10px;
+}
+
+h4 {
+    font-family: 'Atma', cursive;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: right;
+    animation: slideInLeft;
+    animation-duration: 3s;
+}
+
+
+/*Estilos del slider*/
+
+.container-slider {
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+    margin-top: 140px;
+    padding-top: 1px;
+}
+
+.slider {
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+    position: relative;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+}
+
+.slider__section {
+    width: 100%;
+    position: relative;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.slider__btn:hover {
+    background: #C2917F;
+}
+
+.slider__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    text-align: center;
+    z-index: 999;
+}
+
+.slider__section-btn {
+    display: block;
+    border: 3px solid #C2917F;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    margin: 20px auto;
+}
+
+.slider__btn--left {
+    left: 10px;
+}
+
+.slider__btn--right {
+    right: 10px;
+}
+
+.slider__title {
+    font-size: 2.2em;
+    margin: 0;
+}
+
+.slide__txt {
+    margin: 5px 0;
+    font-size: 1.2em;
+}
+
+
+/* Estilos de los productos destacados*/
+
+.main-title {
+    padding: 3px 0;
+    font-family: 'Atma', cursive;
+    font-weight: bold;
+    text-align: center;
+    color: #996f5f;
+    letter-spacing: 0.15em;
+    word-spacing: 0.7em;
+}
+
+.container-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.product {
+    border: 8px solid #C2917F;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    height: fit-content;
+}
+
+.product__img {
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.product__title {
+    text-align: center;
+    font-family: 'Atma', cursive;
+}
+
+.product__author {
+    color: #AC7E6C;
+    font-weight: bold;
+}
+
+.product__icon {
+    display: block;
+    margin-top: 10px;
+}
+
+
+/*Estilos de Tips */
+
+.container-tips {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.tip {
+    display: inline-block;
+    margin: 20px;
+}
+
+.tip__btn {
+    display: block;
+    border: 3px solid #C2917F;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    margin: 20px auto;
+}
+
+.tip__title {
+    font-size: 1.4em;
+    font-family: 'Atma';
+    margin: 0;
+    color: #996f5f;
+}
+
+.tip__txt {
+    margin: 5px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(55, 55, 55);
+}
+
+.tip i {
+    font-size: 2em;
+    color: #000000;
+    padding: 20px 0;
+}
+
+
+/*Estilo Footer */
+
+.main-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    background: #d4b7ad;
+    color: #AC7E6C;
+    padding: 30px 20px;
+}
+
+.footer__title {
+    border-bottom: 1px dotted rgb(55, 55, 55);
+    padding-bottom: 20px;
+    font-family: 'Atma', cursive;
+}
+
+.footer__txt {
+    color: rgb(55, 55, 55);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.copy {
+    color: rgb(55, 55, 55);
+    grid-column-start: span 4;
+    text-align: center;
+}
+
+.product__icon1 {
+    display: block;
+    margin-top: 10px;
+    color: red;
+}
+
+.fa-brands:hover {
+    cursor: pointer;
+}

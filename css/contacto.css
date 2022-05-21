@@ -1,0 +1,233 @@
+        * {
+            box-sizing: border-box;
+        }
+        /*Estilos del header */
+        
+        .nav__responsive-ul {
+            display: none;
+        }
+        
+        .nav {
+            background-color: #d4b7ad;
+        }
+        
+        .nav__li {
+            display: inline-block;
+            padding: 12px;
+            color: #AC7E6C;
+        }
+        
+        .nav__li:hover>a {
+            color: #000;
+        }
+        
+        .nav__li:hover {
+            color: #000;
+        }
+        
+        .nav__li a {
+            color: #AC7E6C;
+            text-decoration: none;
+            font-family: 'Atma', cursive;
+        }
+        
+        .nav__li i {
+            box-sizing: border-box;
+            text-align: right;
+            margin-right: 5px;
+        }
+        
+        .nav__responsive-button-container {
+            position: absolute;
+            width: 100%;
+            font-size: 25px;
+            background-color: #d4b7ad;
+            margin-top: -64px;
+            z-index: 100;
+        }
+        
+        .nav__responsive-button {
+            padding: 6px 20px;
+            text-align: right;
+            width: 100%;
+        }
+        /*Fin estilos del header */
+        
+        body {
+            background-image: url(../fondoContacto.jpg);
+            background-size: 100vw 100vh;
+            background-attachment: fixed;
+            margin: 0;
+        }
+        
+        form {
+            width: 450px;
+            margin: auto;
+            background: #c2917f42;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            border-radius: 7px;
+        }
+        
+        h2 {
+            color: #B98A78;
+            text-align: center;
+            margin: 0;
+            font-size: 30px;
+            margin-bottom: 20px;
+            font-family: 'Atma', cursive;
+        }
+        
+        input,
+        textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 17px;
+            border: none;
+        }
+        
+        textarea {
+            min-height: 100px;
+            max-height: 200px;
+            max-width: 100%;
+        }
+        
+        #Boton {
+            background: #C2917F;
+            color: black;
+        }
+        
+        #Boton:hover {
+            cursor: pointer;
+        }
+        /*Estilo Footer */
+        
+        .main-footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+            background: #d4b7ad;
+            color: #AC7E6C;
+            padding: 30px 20px;
+        }
+        
+        .footer__title {
+            border-bottom: 1px dotted rgb(55, 55, 55);
+            padding-bottom: 20px;
+            font-family: 'Atma', cursive;
+        }
+        
+        .footer__txt {
+            color: rgb(55, 55, 55);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .copy {
+            color: rgb(55, 55, 55);
+            grid-column-start: span 4;
+            text-align: center;
+        }
+        
+        .product__icon1 {
+            display: block;
+            margin-top: 10px;
+            color: red;
+        }
+        
+        .fa-brands:hover {
+            cursor: pointer;
+        }
+        /* Responsive */
+        
+        @media only screen and (min-width: 1px) AND (max-width:750px) {
+            .nav__ul {
+                display: none;
+            }
+            .nav {
+                height: 37px;
+                width: 100%;
+            }
+            .nav__responsive-ul {
+                display: block;
+                position: absolute;
+                width: 100%;
+                margin-top: 37px;
+                padding-top: 27px;
+                height: 37px;
+            }
+            .nav__li-container {
+                position: relative;
+                top: -1000px;
+                height: calc(100vh - 64px);
+                background-color: #d4b7ad;
+                transition: all 1s;
+                z-index: 1;
+                width: 100%;
+                padding-top: 27px;
+            }
+            .nav__responsive-li {
+                width: 100%;
+                padding: 9px 20px;
+                font-family: 'Atma', cursive;
+                list-style: none;
+            }
+            .nav__responsive-li i {
+                box-sizing: border-box;
+                text-align: center;
+                margin-right: 5px;
+                width: 30px;
+                color: #000;
+            }
+            .nav__responsive-li a {
+                color: #000;
+                text-decoration: none;
+            }
+            .nav__responsive-ul:hover>.nav__li-container {
+                top: -27px;
+                cursor: pointer;
+            }
+            .footer__title {
+                font-size: 20px;
+            }
+            .footer__txt {
+                font-size: 16px;
+            }
+            iframe {
+                width: 100px;
+                height: 100px;
+            }
+            body {
+                background-image: none;
+                background-color: #876455;
+            }
+            .main-footer {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                text-align: center;
+                background: #d4b7ad;
+                color: #AC7E6C;
+                padding: 30px 20px;
+            }
+        }
+        
+        @media screen and (min-width:751px) {
+            .footer__title {
+                font-size: 24px;
+            }
+            .footer__txt {
+                font-size: 20px;
+            }
+        }
+        
+        @media screen and (min-width:1px) AND (max-width:500px) {
+            .footer__title {
+                font-size: 15px;
+            }
+            .footer__txt {
+                font-size: 12px;
+            }
+        }
