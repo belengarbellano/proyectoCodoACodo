@@ -208,6 +208,13 @@ h4 {
     margin-bottom: 100px;
 }
 
+@media screen and (max-width:780px) {
+    .container-products {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 1px;
+    }
+}
+
 .product {
     border: 8px solid #C2917F;
     padding: 10px;
@@ -319,4 +326,15 @@ h4 {
 
 .fa-brands:hover {
     cursor: pointer;
+}
+
+@media screen and (min-width:390px) {
+    .container-products {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 40px;
+    }
+    .main-footer {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
