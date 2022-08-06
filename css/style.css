@@ -331,6 +331,61 @@ h4 {
 @media screen and (min-width:390px) {
     .container-products {
         grid-template-columns: repeat(1, 1fr);
+        margin-left: 90px;
+    }
+    .main-footer {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:375px) {
+    .container-products {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 30px;
+    }
+    .main-footer {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:360px) {
+    .container-products {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 20px;
+    }
+    .main-footer {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:412px) {
+    .container-products {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 40px;
+    }
+    .main-footer {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:820px) {
+    .container-products {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 40px;
+    }
+    .main-footer {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container-products {
+        grid-template-columns: repeat(2, 1fr);
         margin-left: 40px;
     }
     .main-footer {
